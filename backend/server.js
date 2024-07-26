@@ -9,9 +9,9 @@ process.on("uncaughtException",(err)=>{
 
 const express = require("express");
 const ap = express();
-if (process.env.NODE_ENV !== "PRODUCTION") {
+// if (process.env.NODE_ENV !== "PRODUCTION") {
     require("dotenv").config({ path: "backend/config/config.env" });
-}
+// }
 const cors = require("cors");
 ap.use(cors());
 
